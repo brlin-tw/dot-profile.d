@@ -1,0 +1,72 @@
+# utility functions
+# 林博仁 © 2017
+# shellcheck shell=sh
+
+## Include guard
+if [ -n "${_PROFILE_D_FUNCTIONS_INCLUDED}" ]; then
+	return 0
+fi
+
+## User-friendly directory existance check
+is_path_exist(){
+	if [ "${#}" -ne 1 ]; then
+		printf "ERROR: %u: Argument quantity mismatch!\n" "${LINENO}" 1>&2
+		exit 1
+	fi
+
+	test -d "${1}"
+	return
+}
+
+## Check if the dir is already in ${PATH}
+is_dir_in_executable_search_path(){
+	if [ "${#}" -ne 1 ]; then
+		printf "ERROR: %u: Argument quantity mismatch!\n" "${LINENO}" 1>&2
+		exit 1
+	fi
+
+	is_dir_in_path_dir="${1}"
+
+	find_result=1 # not found by default
+
+	# Backup IFS and restore afterwards
+	IFS_ORIGINAL="${IFS}"
+	IFS=":"
+
+	for pathdir in ${PATH}; do
+		if [ "${is_dir_in_path_dir}" = "${pathdir}" ]; then
+			find_result=0
+			break
+		fi
+	done
+
+	IFS="${IFS_ORIGINAL}"
+
+	return "${find_result}"
+}
+
+## Utility function to install non-FHS compliant software's executable path to executable search path set
+install_executable_search_path(){
+	if [ "${#}" -ne 1 ]; then
+		printf "ERROR: Argument quantity mismatch!\n" 1>&2
+		exit 1
+	fi
+
+	executable_path="${1}"
+
+	if is_dir_in_executable_search_path "${executable_path}"; then
+		return 0
+	fi
+
+	if is_path_exist "${executable_path}"; then
+		PATH="${executable_path}:${PATH}"
+	else
+		printf "WARNING: %u: Executable path \"%s\" not exist, ignored.\n" "${LINENO}" "${executable_path}" 1>&2
+	fi
+
+	unset executable_path
+	return 0
+}
+
+## Set include guard
+readonly _PROFILE_D_FUNCTIONS_INCLUDED="1"

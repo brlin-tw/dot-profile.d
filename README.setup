@@ -1,0 +1,18 @@
+# Setup script for .profile.d, source it in .profile
+# shellcheck shell=sh
+
+## Include guard
+if [ -z "${_PROFILE_D_SOURCED}" ]; then
+	# Source utility functions
+	. "${HOME}/.profile.d/README.functions"
+
+	# Source every profile script in ~/.profile.d
+	if [ -d "${HOME}/.profile.d" ]; then
+		for profile_script in "${HOME}/.profile.d"/*.source.sh; do
+			. "${profile_script}"
+		done
+	fi
+
+	# Set include guard
+	readonly _PROFILE_D_SOURCED="1"
+fi
