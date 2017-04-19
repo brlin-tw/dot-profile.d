@@ -18,7 +18,7 @@
 ```shell
 # Setup .profile.d/
 # https://github.com/Lin-Buo-Ren/.profile.d
-. .profile.d/README.setup
+. "${HOME}/.profile.d/README.setup"
 ```
 
 您需要重新登出再登入才能讓設定生效
