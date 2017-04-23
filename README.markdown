@@ -1,4 +1,4 @@
-# .profile.d<br>分散式的 profile 設定檔管理專案
+# .profile.d<br>分散式的 profile 設定檔管理解決方案
 <https://github.com/Lin-Buo-Ren/.profile.d>
 
 .profile 為類 Unix 作業系統中使用者登入後會一次性載入並執行的設定檔，主要用來設定使用者的環境變數（包含作為可執行檔搜索路徑的 `PATH` 環境變數）。
