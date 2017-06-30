@@ -1,6 +1,15 @@
 # Setup script for .profile.d, source it in .profile
 # shellcheck shell=sh
 
+## Set to 1 to enable verbose debugging
+_PROFILE_D_DEBUG=0
+
+if [ "$_PROFILE_D_DEBUG" = 1 ]; then
+	printf --\
+		".profile.d: DEBUG: Loading...\n"\
+		1>&2
+fi
+
 ## Include guard
 if [ -z "${_PROFILE_D_SOURCED}" ]; then
 	# Source utility functions
@@ -9,10 +18,20 @@ if [ -z "${_PROFILE_D_SOURCED}" ]; then
 	# Source every profile script in ~/.profile.d
 	if [ -d "${HOME}/.profile.d" ]; then
 		for profile_script in "${HOME}/.profile.d"/*.source.sh; do
+			if [ "$_PROFILE_D_DEBUG" = 1 ]; then
+				printf --\
+					"%s: DEBUG: Sourcing %s\n"\
+					".profile.d"\
+					"${profile_script}"\
+					1>&2
+			fi
 			. "${profile_script}"
 		done
 	fi
 
 	# Set include guard
 	_PROFILE_D_SOURCED="1"
+else
+	printf --\
+		".profile.d: DEBUG: Not running due to existing include guard, unset _PROFILE_D_SOURCED if you really want to reload.\n"
 fi
