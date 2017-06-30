@@ -14,5 +14,5 @@ if [ -z "${_PROFILE_D_SOURCED}" ]; then
 	fi
 
 	# Set include guard
-	readonly _PROFILE_D_SOURCED="1"
+	_PROFILE_D_SOURCED="1"
 fi
