@@ -4,7 +4,7 @@
 # Safe Compiler Flags(orig. Safe CFLAGS)
 # https://wiki.gentoo.org/wiki/Safe_CFLAGS
 # 林博仁 <Buo.Ren.Lin@gmail.com> © 2017
-if [ -z "${INCLUDE_GUARD_PROFILE_D_SAFE_CFLAGS}" ]; then
+if [ -n "${INCLUDE_GUARD_PROFILE_D_SAFE_CFLAGS}" ]; then
 	return 0
 fi
 
