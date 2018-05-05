@@ -1,1 +1,1 @@
-install_executable_search_path "${HOME}/軟體/vdent - Verilog Indenter/master-c9817751/bin"
+install_executable_search_path "${HOME}/工作空間/第三方專案/vdent - Verilog Indenter - Simple indent program for Verilog source code. Trims end of line white space and indents lines based on nested depth of code blocks/bin"
