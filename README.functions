@@ -80,7 +80,7 @@ install_executable_search_path(){
 	if is_path_exist "${executable_path}"; then
 		PATH="${executable_path}:${PATH}"
 	else
-		printf "WARNING: %u: Executable path \"%s\" not exist, ignored.\n" "${LINENO}" "${executable_path}" 1>&2
+		printf "WARNING: %u: Executable path \"%s\" not exist, ignored.\n" "${LINENO}" "${executable_path}" >>/tmp/_dot_profile_dot_d."$(id --user --name)".log
 	fi
 
 	unset executable_path
