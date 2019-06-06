@@ -9,9 +9,9 @@ if [ -n "${_PROFILE_D_INC_GRD_SNAPCRAFT}" ]; then
 	return 0
 fi
 
-# Use persistent LXD container for snap building
-SNAPCRAFT_BUILD_ENVIRONMENT=lxd
-export SNAPCRAFT_BUILD_ENVIRONMENT
+# Hardcode build environment
+#SNAPCRAFT_BUILD_ENVIRONMENT=
+#export SNAPCRAFT_BUILD_ENVIRONMENT
 
 ## Set Include Guard
 declare _PROFILE_D_INC_GRD_SNAPCRAFT=1
