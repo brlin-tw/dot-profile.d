@@ -25,7 +25,7 @@
     ```shell
     # Setup .profile.d
     # https://github.com/brlin-tw/.profile.d
-    . "${HOME}/.profile.d/README.setup"
+    . "${HOME}/.profile.d/setup.sh.source"
     ```
 
     您需要重新登出再登入才能讓設定生效
