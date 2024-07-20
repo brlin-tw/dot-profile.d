@@ -9,7 +9,7 @@ The .profile file in the root of the user's home directory is a configuration fi
 
 This project provides a solution to host the user's script fragments that is originally placed into the ~/.profile file in order to minimize the pollution of the OS distribution-provided version and allows reusing of the configuration fragments.
 
-You need to create the .profile.d directory in you home directory(if it didn't exist), then place your configuration fragments in the directory under the .source.sh filename extension.  The logic in the .profile file will automatically source and execute these files.
+You need to create the .profile.d directory in you home directory(if it didn't exist), then place your configuration fragments in the directory under the .sh.source filename extension.  The logic in the .profile file will automatically source and execute these files.
 
 ## Features
 
@@ -18,13 +18,13 @@ You need to create the .profile.d directory in you home directory(if it didn't e
 
 ## Setup
 
-1. Clone or download&extract this Git repository to the .profile.d directory under your home directory, ensure that the README.setup and other files are available in the ~/.profile.d directory.
+1. Clone or download&extract this Git repository to the .profile.d directory under your home directory, ensure that the setup.sh.source and other files are available in the ~/.profile.d directory.
 1. Add the following content in the ~/.profile file:
 
     ```shell
     # Setup .profile.d/
     # https://github.com/brlin-tw/.profile.d
-    . "${HOME}/.profile.d/README.setup"
+    . "${HOME}/.profile.d/setup.sh.source"
     ```
 
     You need to logout and re-login your user session to make the configuration change in effect.

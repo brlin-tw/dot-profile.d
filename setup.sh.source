@@ -16,16 +16,25 @@ fi
 ## Include guard
 if [ -z "${_PROFILE_D_SOURCED}" ]; then
     # Source utility functions
-    . "${HOME}/.profile.d/README.functions"
+    . "${HOME}/.profile.d/functions.sh.source"
 
     # Source every profile script in ~/.profile.d
     if [ -d "${HOME}/.profile.d" ]; then
-        for profile_script in "${HOME}/.profile.d"/*.source.sh; do
+        for script_source in "${HOME}/.profile.d"/*.source.sh; do
+            script_source_filename="${script_source##*/}"
+            if test "${script_source_filename}" == functions.sh.source \
+                || test "${script_source_filename}" == setup.sh.source; then
+                # These are not profile scripts
+                continue
+            fi
+
+            profile_script="${script_source}"
+            profile_script_filename="${script_source##*/}"
             if [ "$_PROFILE_D_DEBUG" = 1 ]; then
                 printf --\
-                    "%s: DEBUG: Sourcing %s\n"\
+                    "%s: DEBUG: Sourcing the %s profile script...\n"\
                     ".profile.d"\
-                    "${profile_script}"\
+                    "${profile_script_filename}"\
                     1>&2
             fi
             . "${profile_script}"
