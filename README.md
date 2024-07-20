@@ -1,4 +1,6 @@
-# .profile.d<br>A decentralized user profile configuration management solution
+# .profile.d
+
+A decentralized user profile configuration management solution
 <https://github.com/brlin-tw/.profile.d>
 
 \[English\] \[[台灣中文](README.zh-TW.md)\]

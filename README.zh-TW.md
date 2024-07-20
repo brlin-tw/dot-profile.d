@@ -1,4 +1,6 @@
-# .profile.d<br>分散式的 profile 設定檔管理解決方案
+# .profile.d
+
+分散式的 profile 設定檔管理解決方案  
 <https://github.com/brlin-tw/.profile.d>
 
 \[[English](README.md)\] \[台灣中文\]
