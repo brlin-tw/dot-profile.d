@@ -1,5 +1,8 @@
 # Setup script for .profile.d, source it in .profile
 # shellcheck shell=sh
+#
+# Copyright 2024 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
+# SPDX-License-Identifier: GPL-3.0-or-later
 
 ## Set to 1 to enable verbose debugging
 _PROFILE_D_DEBUG=0

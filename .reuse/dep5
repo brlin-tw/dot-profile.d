@@ -1,0 +1,11 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: .profile.d
+Upstream-Contact: Issues · brlin-tw/.profile.d <https://github.com/brlin-tw/.profile.d/issues>
+Source: https://github.com/brlin-tw/.profile.d
+
+Files:
+    *README.md
+    *README.zh-TW.md
+    */README.md
+Copyright: Copyright 2024 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
+License: GPL-3.0-or-later

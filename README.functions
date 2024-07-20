@@ -1,6 +1,8 @@
 # utility functions
-# 林博仁 © 2019
 # shellcheck shell=sh
+#
+# Copyright 2024 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
+# SPDX-License-Identifier: GPL-3.0-or-later
 
 ## Include guard
 if [ -n "${_PROFILE_D_FUNCTIONS_INCLUDED}" ]; then
