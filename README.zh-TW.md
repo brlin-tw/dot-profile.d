@@ -2,7 +2,7 @@
 
 分散式的 profile 設定檔管理解決方案  
 <https://github.com/brlin-tw/.profile.d>  
-[![GitHub Actions 作業流程狀態標誌](https://github.com/brlin-tw/.profile.d/actions/workflows/check-potential-problems.yml/badge.svg "GitHub Actions 作業流程狀態")](https://github.com/brlin-tw/.profile.d/actions/workflows/check-potential-problems.yml) [![pre-commit 啟用狀態標誌](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white "本專案使用 pre-commit 框架檢查潛在問題")](https://pre-commit.com/) [![REUSE 規範遵循狀態標誌](https://api.reuse.software/badge/gitlab.com/brlin-tw/.profile.d "本專案遵循 REUSE 規範以減少軟體授權成本")](https://api.reuse.software/info/gitlab.com/brlin-tw/.profile.d)
+[![GitHub Actions 作業流程狀態標誌](https://github.com/brlin-tw/.profile.d/actions/workflows/check-potential-problems.yml/badge.svg "GitHub Actions 作業流程狀態")](https://github.com/brlin-tw/.profile.d/actions/workflows/check-potential-problems.yml) [![pre-commit 啟用狀態標誌](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white "本專案使用 pre-commit 框架檢查潛在問題")](https://pre-commit.com/) [![REUSE 規範遵循狀態標誌](https://api.reuse.software/badge/gitlab.com/brlin-tw/.profile.d "本專案遵循 REUSE 規範以減少軟體授權成本")](https://api.reuse.software/info/github.com/brlin-tw/.profile.d)
 
 \[[English](README.md)\] \[台灣中文\]
 
