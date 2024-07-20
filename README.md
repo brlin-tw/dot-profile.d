@@ -19,13 +19,19 @@ You need to create the .profile.d directory in you home directory(if it didn't e
 
 ## Setup
 
-1. Clone or download&extract this Git repository to the .profile.d directory under your home directory, ensure that the setup.sh.source and other files are available in the ~/.profile.d directory.
-1. Add the following content in the ~/.profile file:
+1. Download the release package from [the project's Releases page](https://github.com/brlin-tw/.profile.d/releases).
+1. Extract the release package.
+1. Launch a text terminal emulator application.
+1. In the text terminal emulator application, change the working directory to the extracted release package directory by running the following command:
 
-    ```shell
-    # Setup .profile.d
-    # https://github.com/brlin-tw/.profile.d
-    . "${HOME}/.profile.d/setup.sh.source"
+    ```bash
+    cd /path/to/extracted/release/package/dir
+    ```
+
+1. Run the installation program by running the following command:
+
+    ```bash
+    ./install.sh
     ```
 
     You need to logout and re-login your user session to make the configuration change in effect.

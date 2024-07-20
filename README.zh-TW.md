@@ -19,13 +19,19 @@
 
 ## 設定
 
-1. 將本版控庫拓製(clone)或下載解開到家目錄中的 .profile.d 目錄，確定 `README.setup` 與其他檔案位於 ~/.profile.d 目錄中
-1. 在 ~/.profile 設定檔中加入下列內容：
+1. 於[專案的 Releases 頁面](https://github.com/brlin-tw/.profile.d/releases)下載釋出包。
+1. 解開釋出包。
+1. 啟動一個文字終端機模擬器應用軟體。
+1. 於文字終端機模擬器應用軟體中執行下列命令切換作業目錄至解開的釋出包目錄：
 
-    ```shell
-    # Setup .profile.d
-    # https://github.com/brlin-tw/.profile.d
-    . "${HOME}/.profile.d/setup.sh.source"
+    ```bash
+    cd /path/to/extracted/release/package/dir
+    ```
+
+1. 執行下列命令以執行產品安裝程式：
+
+    ```bash
+    ./install.sh
     ```
 
     您需要重新登出再登入才能讓設定生效
