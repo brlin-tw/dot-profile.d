@@ -269,7 +269,7 @@ if is_setup_logic_installed "${user_profile}"; then
     fi
 else
     printf \
-        'Installing setup logic to the user profile configuration file...\n'
+        'Info: Installing the setup logic to the user profile configuration file...\n'
     if ! cat >>"${user_profile}" <<EOF
 # Setup .profile.d
 # https://github.com/brlin-tw/.profile.d
