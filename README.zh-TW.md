@@ -22,7 +22,7 @@
 1. 在 ~/.profile 設定檔中加入下列內容：
 
     ```shell
-    # Setup .profile.d/
+    # Setup .profile.d
     # https://github.com/brlin-tw/.profile.d
     . "${HOME}/.profile.d/README.setup"
     ```
