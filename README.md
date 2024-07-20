@@ -21,13 +21,13 @@ You need to create the .profile.d directory in you home directory(if it didn't e
 1. Clone or download&extract this Git repository to the .profile.d directory under your home directory, ensure that the README.setup and other files are available in the ~/.profile.d directory.
 1. Add the following content in the ~/.profile file:
 
-```shell
-# Setup .profile.d/
-# https://github.com/brlin-tw/.profile.d
-. "${HOME}/.profile.d/README.setup"
-```
+    ```shell
+    # Setup .profile.d/
+    # https://github.com/brlin-tw/.profile.d
+    . "${HOME}/.profile.d/README.setup"
+    ```
 
-You need to logout and re-login your user session to make the configuration change in effect.
+    You need to logout and re-login your user session to make the configuration change in effect.
 
 ## Remark
 

@@ -21,13 +21,13 @@
 1. 將本版控庫拓製(clone)或下載解開到家目錄中的 .profile.d 目錄，確定 `README.setup` 與其他檔案位於 ~/.profile.d 目錄中
 1. 在 ~/.profile 設定檔中加入下列內容：
 
-```shell
-# Setup .profile.d/
-# https://github.com/brlin-tw/.profile.d
-. "${HOME}/.profile.d/README.setup"
-```
+    ```shell
+    # Setup .profile.d/
+    # https://github.com/brlin-tw/.profile.d
+    . "${HOME}/.profile.d/README.setup"
+    ```
 
-您需要重新登出再登入才能讓設定生效
+    您需要重新登出再登入才能讓設定生效
 
 ## 注意
 
