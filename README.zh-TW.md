@@ -12,10 +12,12 @@
 您需要在家目錄中新建 .profile.d 目錄（如果該目錄原本還沒存在的話），然後將您的 profile 個人設定檔片段以 .source.sh 副檔名寫進 .profile.d 目錄中，.profile 中的程式會自動引入(source)並執行。
 
 ## 特色
+
 * 備有將指定目錄插入 shell 可執行檔搜尋路徑(`PATH` 環境變數）中的工具函式
 * 如果指定目錄不存在或是 `PATH` 中已有相同路徑將不會添加，避免增加搜尋路徑的多餘時間
 
 ## 設定
+
 1. 將本版控庫拓製(clone)或下載解開到家目錄中的 .profile.d 目錄，確定 `README.setup` 與其他檔案位於 ~/.profile.d 目錄中
 1. 在 ~/.profile 設定檔中加入下列內容：
 
@@ -28,7 +30,9 @@
 您需要重新登出再登入才能讓設定生效
 
 ## 注意
+
 .profile 為通用的 script 程式，應使用 [POSIX.1-2008 規範的 shell script 語法](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html)而非 Bash 等殼層程式的專有語法撰寫
 
 ## 授權條款
+
 GPLv3+
