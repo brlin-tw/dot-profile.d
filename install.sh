@@ -270,12 +270,18 @@ if is_setup_logic_installed "${user_profile}"; then
 else
     printf \
         'Installing setup logic to the user profile configuration file...\n'
-cat >>"${user_profile}" <<EOF
+    if ! cat >>"${user_profile}" <<EOF
 # Setup .profile.d
 # https://github.com/brlin-tw/.profile.d
 . "\${HOME}/.profile.d/setup.sh.source"
 
 EOF
+    then
+        printf \
+            'Error: Unable to install the setup logic to the user profile configuration file.\n' \
+            1>&2
+        exit 2
+    fi
 fi
 
 printf \
