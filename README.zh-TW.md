@@ -36,4 +36,6 @@
 
 ## 授權條款
 
-GPLv3+
+除另有註明（個別檔案的開頭 / [REUSE DEP5 文件](.reuse/dep5)）本專案的內容以[第三版的 GNU General Public License 授權條款](https://www.gnu.org/licenses/gpl-3.0.html.en)或其任意更近期版本釋出供大眾於授權範圍內自由使用。
+
+本作品遵循 [REUSE 規範](https://reuse.software/spec/)，參閱 [REUSE - Make licensing easy for everyone 網站](https://reuse.software/)以獲取本產品授權方面的相關資訊。

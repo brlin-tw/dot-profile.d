@@ -36,4 +36,6 @@ The .profile file is a generic shell script, you should use [the POSIX.1-2008 sp
 
 ## Licensing
 
-GPLv3+
+Unless otherwise noted(individual file's header/[REUSE DEP5](.reuse/dep5)), this product is licensed under [version 3 of The GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.html.en), or any of its recent versions you would prefer.
+
+This work complies to [the REUSE Specification](https://reuse.software/spec/), refer the [REUSE - Make licensing easy for everyone](https://reuse.software/) website for info regarding the licensing of this product.
