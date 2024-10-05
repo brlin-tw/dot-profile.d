@@ -38,7 +38,8 @@ You need to create the .profile.d directory in you home directory(if it didn't e
 
 ## Remark
 
-The .profile file is a generic shell script, you should use [the POSIX.1-2008 specification-compliant shell script syntax](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html) to write the configuration scriptlets instead of specific shell script syntaxes like Bash.
+* The .profile file is a generic shell script, you should use [the POSIX.1-2008 specification-compliant shell script syntax](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html) to write the configuration scriptlets instead of specific shell script syntaxes like Bash.
+* The ~/.profile.d/\*.source.sh configuration scriptlets are expected to be idempotent, which is the state won't be changed when the profile script is repeatedly sourced.
 
 ## Licensing
 
