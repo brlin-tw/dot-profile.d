@@ -14,7 +14,7 @@ if [ "$_PROFILE_D_DEBUG" = 1 ]; then
 fi
 
 # Source utility functions
-. "${HOME}/.profile.d/functions.sh.source"
+. "${HOME}/.profile.d/.functions.source.sh"
 
 # Source every profile script in ~/.profile.d
 if [ -d "${HOME}/.profile.d" ]; then
@@ -22,13 +22,6 @@ if [ -d "${HOME}/.profile.d" ]; then
         # If the filename expansion results in no files the expansion pattern will be keep intact and will be an invalid loop item
         if test "${script_source}" = "${HOME}/.profile.d/*.source.sh"; then
             break
-        fi
-
-        script_source_filename="${script_source##*/}"
-        if test "${script_source_filename}" == functions.sh.source \
-            || test "${script_source_filename}" == setup.sh.source; then
-            # These are not profile scripts
-            continue
         fi
 
         profile_script="${script_source}"

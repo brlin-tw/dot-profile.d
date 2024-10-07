@@ -133,8 +133,8 @@ fi
 product_dir="${script_dir}"
 product_assets=(
     "${product_dir}/README"*.md
-    "${product_dir}/setup.sh.source"
-    "${product_dir}/functions.sh.source"
+    "${product_dir}/.setup.source.sh"
+    "${product_dir}/.functions.source.sh"
     "${product_dir}/install-executable-search-path.source.sh.template"
 
     # For ease of editing product files
@@ -161,7 +161,9 @@ done
 
 obsoleted_assets=(
     "${user_profile_dropin_dir}/README.setup"
+    "${user_profile_dropin_dir}/setup.sh.source"
     "${user_profile_dropin_dir}/README.functions"
+    "${user_profile_dropin_dir}/functions.sh.source"
 )
 for asset in "${obsoleted_assets[@]}"; do
     asset_filename="${asset##*/}"
@@ -226,6 +228,7 @@ is_outdated_setup_logic_installed(){
     local -a grep_opts=(
         # The search patterns specified
         --regexp='. "${HOME}/.profile.d/README.setup"'
+        --regexp='. "${HOME}/.profile.d/setup.sh.source"'
 
         # The search patterns are literal strings, not expression
         --fixed-strings
@@ -257,8 +260,9 @@ if is_setup_logic_installed "${user_profile}"; then
             # Input expression is a Extended Regular Expression(ERE)
             --regexp-extended
 
-            # sed expression to process
-            --expression='s@\. "\$\{HOME\}/\.profile\.d/README\.setup"@. "${HOME}/.profile.d/setup.sh.source"@g'
+            # sed expressions to process
+            --expression='s@\. "\$\{HOME\}/\.profile\.d/README\.setup"@. "${HOME}/.profile.d/.setup.source.sh"@g'
+            --expression='s@\. "\$\{HOME\}/\.profile\.d/setup\.sh\.source"@. "${HOME}/.profile.d/.setup.source.sh"@g'
         )
         if ! sed "${sed_opts[@]}" "${user_profile}"; then
             printf \
@@ -273,7 +277,7 @@ else
     if ! cat >>"${user_profile}" <<EOF
 # Setup .profile.d
 # https://github.com/brlin-tw/.profile.d
-. "\${HOME}/.profile.d/setup.sh.source"
+. "\${HOME}/.profile.d/.setup.source.sh"
 
 EOF
     then

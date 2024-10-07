@@ -88,3 +88,6 @@
 
 # Don't track continuous integration virtual environments
 /continuous-integration/venv/
+
+# Do track setup and functions source scripts
+!.*.source.sh
