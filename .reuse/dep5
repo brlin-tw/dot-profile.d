@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: .profile.d
-Upstream-Contact: Issues · brlin-tw/.profile.d <https://github.com/brlin-tw/.profile.d/issues>
-Source: https://github.com/brlin-tw/.profile.d
+Upstream-Contact: Issues · brlin-tw/dot-profile.d <https://github.com/brlin-tw/dot-profile.d/issues>
+Source: https://github.com/brlin-tw/dot-profile.d
 
 Files:
     *README.md

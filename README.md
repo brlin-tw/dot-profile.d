@@ -1,8 +1,8 @@
 # .profile.d
 
 A decentralized user profile configuration management solution  
-<https://github.com/brlin-tw/.profile.d>  
-[![GitHub Actions workflow status badge](https://github.com/brlin-tw/.profile.d/actions/workflows/check-potential-problems.yml/badge.svg "GitHub Actions workflow status")](https://github.com/brlin-tw/.profile.d/actions/workflows/check-potential-problems.yml) [![pre-commit enabled badge](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white "This project uses pre-commit to check potential problems")](https://pre-commit.com/) [![REUSE Specification compliance badge](https://api.reuse.software/badge/github.com/brlin-tw/.profile.d "This project complies to the REUSE specification to decrease software licensing costs")](https://api.reuse.software/info/github.com/brlin-tw/.profile.d)
+<https://github.com/brlin-tw/dot-profile.d>  
+[![GitHub Actions workflow status badge](https://github.com/brlin-tw/dot-profile.d/actions/workflows/check-potential-problems.yml/badge.svg "GitHub Actions workflow status")](https://github.com/brlin-tw/dot-profile.d/actions/workflows/check-potential-problems.yml) [![pre-commit enabled badge](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white "This project uses pre-commit to check potential problems")](https://pre-commit.com/) [![REUSE Specification compliance badge](https://api.reuse.software/badge/github.com/brlin-tw/dot-profile.d "This project complies to the REUSE specification to decrease software licensing costs")](https://api.reuse.software/info/github.com/brlin-tw/dot-profile.d)
 
 \[English\] \[[台灣中文](README.zh-TW.md)\]
 
@@ -19,7 +19,7 @@ You need to create the .profile.d directory in you home directory(if it didn't e
 
 ## Setup
 
-1. Download the release package from [the project's Releases page](https://github.com/brlin-tw/.profile.d/releases).
+1. Download the release package from [the project's Releases page](https://github.com/brlin-tw/dot-profile.d/releases).
 1. Extract the release package.
 1. Launch a text terminal emulator application.
 1. In the text terminal emulator application, change the working directory to the extracted release package directory by running the following command:

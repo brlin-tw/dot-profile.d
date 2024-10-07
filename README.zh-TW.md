@@ -1,8 +1,8 @@
 # .profile.d
 
 分散式的 profile 設定檔管理解決方案  
-<https://github.com/brlin-tw/.profile.d>  
-[![GitHub Actions 作業流程狀態標誌](https://github.com/brlin-tw/.profile.d/actions/workflows/check-potential-problems.yml/badge.svg "GitHub Actions 作業流程狀態")](https://github.com/brlin-tw/.profile.d/actions/workflows/check-potential-problems.yml) [![pre-commit 啟用狀態標誌](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white "本專案使用 pre-commit 框架檢查潛在問題")](https://pre-commit.com/) [![REUSE 規範遵循狀態標誌](https://api.reuse.software/badge/github.com/brlin-tw/.profile.d "本專案遵循 REUSE 規範以減少軟體授權成本")](https://api.reuse.software/info/github.com/brlin-tw/.profile.d)
+<https://github.com/brlin-tw/dot-profile.d>  
+[![GitHub Actions 作業流程狀態標誌](https://github.com/brlin-tw/dot-profile.d/actions/workflows/check-potential-problems.yml/badge.svg "GitHub Actions 作業流程狀態")](https://github.com/brlin-tw/dot-profile.d/actions/workflows/check-potential-problems.yml) [![pre-commit 啟用狀態標誌](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white "本專案使用 pre-commit 框架檢查潛在問題")](https://pre-commit.com/) [![REUSE 規範遵循狀態標誌](https://api.reuse.software/badge/github.com/brlin-tw/dot-profile.d "本專案遵循 REUSE 規範以減少軟體授權成本")](https://api.reuse.software/info/github.com/brlin-tw/dot-profile.d)
 
 \[[English](README.md)\] \[台灣中文\]
 
@@ -19,7 +19,7 @@
 
 ## 設定
 
-1. 於[專案的 Releases 頁面](https://github.com/brlin-tw/.profile.d/releases)下載釋出包。
+1. 於[專案的 Releases 頁面](https://github.com/brlin-tw/dot-profile.d/releases)下載釋出包。
 1. 解開釋出包。
 1. 啟動一個文字終端機模擬器應用軟體。
 1. 於文字終端機模擬器應用軟體中執行下列命令切換作業目錄至解開的釋出包目錄：
