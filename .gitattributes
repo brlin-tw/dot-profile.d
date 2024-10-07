@@ -16,3 +16,7 @@
 
 # Keep editorconfig for ease of editing of product files
 /.editorconfig -export-ignore
+
+# Keep setup and functions source scripts in the source archive
+/.functions.source.sh -export-ignore
+/.setup.source.sh -export-ignore
