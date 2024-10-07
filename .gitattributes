@@ -16,9 +16,3 @@
 
 # Keep editorconfig for ease of editing of product files
 /.editorconfig -export-ignore
-
-# Keep REUSE DEP5 declaration file in the release archive for legal
-# conformance
-/.reuse/ -export-ignore
-/.reuse/* export-ignore
-/.reuse/dep5 -export-ignore
