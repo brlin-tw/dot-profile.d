@@ -33,6 +33,9 @@ if [ -d "${HOME}/.profile.d" ]; then
                 "${profile_script_filename}"\
                 1>&2
         fi
+
+        # FALSE POSITIVE: External resource
+        # shellcheck source=/dev/null
         . "${profile_script}"
     done
 fi
