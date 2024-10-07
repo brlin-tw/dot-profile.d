@@ -197,6 +197,7 @@ is_setup_logic_installed(){
     # shellcheck disable=SC2016
     local -a grep_opts=(
         # The search patterns specified
+        --regexp='. "${HOME}/.profile.d/.setup.source.sh"'
         --regexp='. "${HOME}/.profile.d/setup.sh.source"'
         --regexp='. "${HOME}/.profile.d/README.setup"'
 
